@@ -75,7 +75,6 @@ public class BookManagement {
             newList.add(list.get(i));
         }
         Collections.sort(newList);
-        displayListBooks(list);
         displayListBooks(newList);
     }
     public static void deleteBooks(List<Book> list,Scanner scanner){
