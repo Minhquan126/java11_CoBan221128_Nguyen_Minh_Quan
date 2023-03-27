@@ -70,7 +70,13 @@ public class BookManagement {
         }
     }
     public static void sortByInterest(List<Book> list){
-        Collections.sort(list);
+        List<Book> newList = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            newList.add(list.get(i));
+        }
+        Collections.sort(newList);
+        displayListBooks(list);
+        displayListBooks(newList);
     }
     public static void deleteBooks(List<Book> list,Scanner scanner){
         Book book = new Book();
